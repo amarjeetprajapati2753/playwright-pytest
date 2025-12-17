@@ -13,7 +13,7 @@ def test_example_domain_page(page,setup):
 
     # Task 4: Verify full paragraph text
     expect(page.locator("body")).to_contain_text(
-        "This domain is for use in illustrative examples in documents."
+        "This domain is for use in documentation examples without needing permission."
     )
 
     # Task 5: Negative scenario – incorrect title should NOT match
