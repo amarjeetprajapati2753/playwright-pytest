@@ -1,6 +1,6 @@
 import pytest
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def setup():
     print("\nBrowser setup")
     yield
